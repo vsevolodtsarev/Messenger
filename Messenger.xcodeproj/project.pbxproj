@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		132D00B72BA976D700210135 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132D00B62BA976D700210135 /* RegistrationView.swift */; };
 		13A500842BA0820300E79F4A /* MessengerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A500832BA0820300E79F4A /* MessengerApp.swift */; };
 		13A500862BA0820300E79F4A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A500852BA0820300E79F4A /* ContentView.swift */; };
 		13A500882BA0820500E79F4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13A500872BA0820500E79F4A /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		132D00B62BA976D700210135 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		13A500802BA0820300E79F4A /* Messenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Messenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13A500832BA0820300E79F4A /* MessengerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerApp.swift; sourceTree = "<group>"; };
 		13A500852BA0820300E79F4A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				13A5009A2BA0841800E79F4A /* LoginView.swift */,
+				132D00B62BA976D700210135 /* RegistrationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				13A5009B2BA0841800E79F4A /* LoginView.swift in Sources */,
 				13A500862BA0820300E79F4A /* ContentView.swift in Sources */,
 				13A500842BA0820300E79F4A /* MessengerApp.swift in Sources */,
+				132D00B72BA976D700210135 /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
