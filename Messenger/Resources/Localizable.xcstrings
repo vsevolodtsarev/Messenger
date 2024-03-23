@@ -11,6 +11,16 @@
         }
       }
     },
+    "Chats" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Чаты"
+          }
+        }
+      }
+    },
     "Continue with Google" : {
       "localizations" : {
         "ru" : {
