@@ -1,6 +1,26 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "Already have an account?" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Уже есть аккаунт?"
+          }
+        }
+      }
+    },
+    "Chats" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Чаты"
+          }
+        }
+      }
+    },
     "Continue with Google" : {
       "localizations" : {
         "ru" : {
@@ -27,6 +47,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Введите email"
+          }
+        }
+      }
+    },
+    "Enter your fullname" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Введите имя"
           }
         }
       }
@@ -77,6 +107,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Сбросить пароль"
+          }
+        }
+      }
+    },
+    "Sign In" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Войти"
           }
         }
       }
