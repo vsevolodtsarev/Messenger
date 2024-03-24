@@ -11,12 +11,32 @@
         }
       }
     },
+    "Cancel" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Отмена"
+          }
+        }
+      }
+    },
     "Chats" : {
       "localizations" : {
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Чаты"
+          }
+        }
+      }
+    },
+    "CONTACTS" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "КОНТАКТЫ"
           }
         }
       }
@@ -91,6 +111,16 @@
         }
       }
     },
+    "New Message" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Новое Сообщение"
+          }
+        }
+      }
+    },
     "OR" : {
       "localizations" : {
         "ru" : {
@@ -107,6 +137,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Сбросить пароль"
+          }
+        }
+      }
+    },
+    "Search" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поиск"
           }
         }
       }
