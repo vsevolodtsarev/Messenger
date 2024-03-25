@@ -1,6 +1,26 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "Accessibility" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Универсальный доступ"
+          }
+        }
+      }
+    },
+    "Active Status" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Активный Статус"
+          }
+        }
+      }
+    },
     "Already have an account?" : {
       "localizations" : {
         "ru" : {
@@ -47,6 +67,26 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Продолжить с Google"
+          }
+        }
+      }
+    },
+    "Dark Mode" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Темный Режим"
+          }
+        }
+      }
+    },
+    "Delete Account" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Удалить Аккаунт"
           }
         }
       }
@@ -101,6 +141,16 @@
         }
       }
     },
+    "Log Out" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выйти"
+          }
+        }
+      }
+    },
     "Login" : {
       "localizations" : {
         "ru" : {
@@ -121,12 +171,32 @@
         }
       }
     },
+    "Notifications" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Уведомления"
+          }
+        }
+      }
+    },
     "OR" : {
       "localizations" : {
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "ИЛИ"
+          }
+        }
+      }
+    },
+    "Privacy" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Приватность"
           }
         }
       }
