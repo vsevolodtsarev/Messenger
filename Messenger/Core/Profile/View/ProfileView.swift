@@ -39,7 +39,7 @@ struct ProfileView: View {
             //list
             List {
                 Section {
-                    ForEach(SettingsOptionsModel.allCases) { option in
+                    ForEach(SettingsOptions.allCases) { option in
                         HStack {
                             Image(systemName: option.imageName)
                                 .resizable()
