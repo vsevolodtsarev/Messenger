@@ -15,6 +15,7 @@
 		136E22762BB1FA1E00D6CFD3 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136E22752BB1FA1E00D6CFD3 /* ProfileView.swift */; };
 		136E227A2BB1FC9900D6CFD3 /* SettingsOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136E22792BB1FC9900D6CFD3 /* SettingsOptions.swift */; };
 		136E227D2BB48C2200D6CFD3 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136E227C2BB48C2200D6CFD3 /* ProfileViewModel.swift */; };
+		136E227F2BB5DF0E00D6CFD3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136E227E2BB5DF0E00D6CFD3 /* User.swift */; };
 		13A500842BA0820300E79F4A /* MessengerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A500832BA0820300E79F4A /* MessengerApp.swift */; };
 		13A500862BA0820300E79F4A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A500852BA0820300E79F4A /* ContentView.swift */; };
 		13A500882BA0820500E79F4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13A500872BA0820500E79F4A /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 		136E22752BB1FA1E00D6CFD3 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		136E22792BB1FC9900D6CFD3 /* SettingsOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptions.swift; sourceTree = "<group>"; };
 		136E227C2BB48C2200D6CFD3 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		136E227E2BB5DF0E00D6CFD3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		13A500802BA0820300E79F4A /* Messenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Messenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13A500832BA0820300E79F4A /* MessengerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerApp.swift; sourceTree = "<group>"; };
 		13A500852BA0820300E79F4A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				136E22792BB1FC9900D6CFD3 /* SettingsOptions.swift */,
+				136E227E2BB5DF0E00D6CFD3 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				136E226C2BAEEA3C00D6CFD3 /* InboxView.swift in Sources */,
 				136E226E2BAEECC200D6CFD3 /* ActiveNowView.swift in Sources */,
 				136E227D2BB48C2200D6CFD3 /* ProfileViewModel.swift in Sources */,
+				136E227F2BB5DF0E00D6CFD3 /* User.swift in Sources */,
 				13A500842BA0820300E79F4A /* MessengerApp.swift in Sources */,
 				136E227A2BB1FC9900D6CFD3 /* SettingsOptions.swift in Sources */,
 				132D00B72BA976D700210135 /* RegistrationView.swift in Sources */,
