@@ -1,5 +1,5 @@
 //
-//  SettingsOptionsModel.swift
+//  SettingsOptions.swift
 //  Messenger
 //
 //  Created by Всеволод Царев on 25.03.2024.
@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-enum SettingsOptionsModel: Int, CaseIterable, Identifiable {
+enum SettingsOptions: Int, CaseIterable, Identifiable {
     var id: Int { return self.rawValue }
     
     case darkMode
