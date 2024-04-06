@@ -22,11 +22,11 @@ enum ImageProfileSize {
 }
 
 struct ImageProfileView: View {
-    let user: User
+    let user: User?
     let size: ImageProfileSize
     
     var body: some View {
-        if let imageUrl = user.profileImageUrl {
+        if let imageUrl = user?.profileImageUrl {
             Image(imageUrl)
                 .resizable()
                 .scaledToFill()
