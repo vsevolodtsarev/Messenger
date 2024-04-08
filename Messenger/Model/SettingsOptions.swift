@@ -51,7 +51,7 @@ enum SettingsOptions: Int, CaseIterable, Identifiable {
         switch self {
             
         case .darkMode:
-                .gray
+                .orange
         case .activeStatus:
                 .green
         case .accessibility:

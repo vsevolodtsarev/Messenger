@@ -8,7 +8,7 @@
 import Foundation
 import FirebaseFirestoreSwift
 
-struct User: Codable, Hashable {
+struct User: Codable, Hashable, Identifiable {
     @DocumentID var uid: String?
     let fullname: String
     let email: String

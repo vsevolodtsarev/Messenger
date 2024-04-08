@@ -32,6 +32,7 @@
 		136E22A22BBDC6D000D6CFD3 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136E22A12BBDC6D000D6CFD3 /* UserService.swift */; };
 		136E22A62BC13F8B00D6CFD3 /* InboxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136E22A52BC13F8B00D6CFD3 /* InboxViewModel.swift */; };
 		136E22AA2BC3E5A500D6CFD3 /* ThemeChangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136E22A92BC3E5A500D6CFD3 /* ThemeChangeView.swift */; };
+		136E22AE2BC413E600D6CFD3 /* NewMessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136E22AD2BC413E600D6CFD3 /* NewMessageViewModel.swift */; };
 		13A500842BA0820300E79F4A /* MessengerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A500832BA0820300E79F4A /* MessengerApp.swift */; };
 		13A500862BA0820300E79F4A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A500852BA0820300E79F4A /* ContentView.swift */; };
 		13A500882BA0820500E79F4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13A500872BA0820500E79F4A /* Assets.xcassets */; };
@@ -62,6 +63,7 @@
 		136E22A12BBDC6D000D6CFD3 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		136E22A52BC13F8B00D6CFD3 /* InboxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewModel.swift; sourceTree = "<group>"; };
 		136E22A92BC3E5A500D6CFD3 /* ThemeChangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeChangeView.swift; sourceTree = "<group>"; };
+		136E22AD2BC413E600D6CFD3 /* NewMessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageViewModel.swift; sourceTree = "<group>"; };
 		13A500802BA0820300E79F4A /* Messenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Messenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13A500832BA0820300E79F4A /* MessengerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerApp.swift; sourceTree = "<group>"; };
 		13A500852BA0820300E79F4A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,7 +100,8 @@
 		136E22712BB07DF200D6CFD3 /* NewMessage */ = {
 			isa = PBXGroup;
 			children = (
-				136E22722BB07E0000D6CFD3 /* NewMessageView.swift */,
+				136E22AC2BC413D600D6CFD3 /* ViewModel */,
+				136E22AB2BC413CB00D6CFD3 /* View */,
 			);
 			path = NewMessage;
 			sourceTree = "<group>";
@@ -147,15 +150,6 @@
 			path = Chat;
 			sourceTree = "<group>";
 		};
-		136E22952BBBDC1800D6CFD3 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				136E229B2BBBDCBF00D6CFD3 /* AuthService.swift */,
-				136E22A12BBDC6D000D6CFD3 /* UserService.swift */,
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
 		136E22962BBBDC2000D6CFD3 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +189,22 @@
 			isa = PBXGroup;
 			children = (
 				136E22A52BC13F8B00D6CFD3 /* InboxViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		136E22AB2BC413CB00D6CFD3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				136E22722BB07E0000D6CFD3 /* NewMessageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		136E22AC2BC413D600D6CFD3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				136E22AD2BC413E600D6CFD3 /* NewMessageViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -262,6 +272,8 @@
 		13A500932BA0829100E79F4A /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				136E22A12BBDC6D000D6CFD3 /* UserService.swift */,
+				136E229B2BBBDCBF00D6CFD3 /* AuthService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -296,7 +308,6 @@
 			isa = PBXGroup;
 			children = (
 				136E22962BBBDC2000D6CFD3 /* ViewModel */,
-				136E22952BBBDC1800D6CFD3 /* Service */,
 				13A500992BA0840600E79F4A /* View */,
 			);
 			path = Authentication;
@@ -417,6 +428,7 @@
 				136E22892BB9C89300D6CFD3 /* ChatBubble.swift in Sources */,
 				136E226C2BAEEA3C00D6CFD3 /* InboxView.swift in Sources */,
 				136E22822BB70C4D00D6CFD3 /* ImageProfileView.swift in Sources */,
+				136E22AE2BC413E600D6CFD3 /* NewMessageViewModel.swift in Sources */,
 				136E22982BBBDC4500D6CFD3 /* LoginViewModel.swift in Sources */,
 				136E22A22BBDC6D000D6CFD3 /* UserService.swift in Sources */,
 				136E226E2BAEECC200D6CFD3 /* ActiveNowView.swift in Sources */,
