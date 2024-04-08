@@ -9,6 +9,7 @@ import SwiftUI
 
 struct LoginView: View {
     @StateObject private var viewModel = LoginViewModel()
+    @AppStorage("userTheme") private var userTheme: Theme = .systemDefault
     
     var body: some View {
         NavigationStack {
@@ -112,6 +113,7 @@ struct LoginView: View {
                 .padding(.vertical)
             }
         }
+        .preferredColorScheme(userTheme.colorScheme)
     }
 }
 
