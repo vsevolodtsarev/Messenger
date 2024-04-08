@@ -10,6 +10,7 @@ import SwiftUI
 struct NewMessageView: View {
     @Environment(\.dismiss) var dismiss
     @State private var searchText = ""
+    @StateObject private var viewModel = NewMessageViewModel()
     
     var body: some View {
         NavigationStack {
@@ -25,12 +26,12 @@ struct NewMessageView: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding()
                 
-                ForEach(0 ... 10, id: \.self) { user in
+                ForEach(viewModel.users) { user in
                     VStack {
                         HStack {
-                            ImageProfileView(user: User.mockUser, size: .small)
+                            ImageProfileView(user: user, size: .small)
                             
-                            Text(verbatim: "Test User")
+                            Text(verbatim: user.fullname)
                                 .font(.subheadline)
                                 .fontWeight(.semibold)
                             
