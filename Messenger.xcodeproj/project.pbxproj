@@ -147,15 +147,6 @@
 			path = Chat;
 			sourceTree = "<group>";
 		};
-		136E22952BBBDC1800D6CFD3 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				136E229B2BBBDCBF00D6CFD3 /* AuthService.swift */,
-				136E22A12BBDC6D000D6CFD3 /* UserService.swift */,
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
 		136E22962BBBDC2000D6CFD3 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,6 +253,8 @@
 		13A500932BA0829100E79F4A /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				136E22A12BBDC6D000D6CFD3 /* UserService.swift */,
+				136E229B2BBBDCBF00D6CFD3 /* AuthService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -296,7 +289,6 @@
 			isa = PBXGroup;
 			children = (
 				136E22962BBBDC2000D6CFD3 /* ViewModel */,
-				136E22952BBBDC1800D6CFD3 /* Service */,
 				13A500992BA0840600E79F4A /* View */,
 			);
 			path = Authentication;
