@@ -10,6 +10,7 @@ import SwiftUI
 struct InboxView: View {
     @State private var showNewMessage = false
     @StateObject var viewModel = InboxViewModel()
+    @AppStorage("userTheme") private var userTheme: Theme = .systemDefault
     private var user: User? {
         viewModel.currentUser
     }
@@ -53,11 +54,12 @@ struct InboxView: View {
                         Image(systemName: "square.and.pencil.circle.fill")
                             .resizable()
                             .frame(width: 32, height: 32)
-                            .foregroundStyle(.black, Color(.systemGray5))
+                            .foregroundStyle(userTheme.colorScheme == .light ? Color(.black) : Color(.white))
                     })
                 }
             }
         }
+        .preferredColorScheme(userTheme.colorScheme)
     }
 }
 

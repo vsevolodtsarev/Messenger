@@ -9,7 +9,10 @@ import SwiftUI
 import PhotosUI
 
 struct ProfileView: View {
+    @Environment(\.colorScheme) private var scheme
     @StateObject var viewModel = ProfileViewModel()
+    @AppStorage("userTheme") private var userTheme: Theme = .systemDefault
+    @State private var changeTheme = false
     let user: User
     
     var body: some View {
@@ -35,18 +38,26 @@ struct ProfileView: View {
             }
             
             //list
+            
             List {
                 Section {
                     ForEach(SettingsOptions.allCases) { option in
-                        HStack {
-                            Image(systemName: option.imageName)
-                                .resizable()
-                                .frame(width: 24, height: 24)
-                                .foregroundStyle(option.imageColor)
-                            
-                            Text(option.title)
-                                .font(.subheadline)
-                        }
+                        Button(action: {
+                            if option == .darkMode {
+                                changeTheme.toggle()
+                            }
+                        }, label: {
+                            HStack {
+                                Image(systemName: option.imageName)
+                                    .resizable()
+                                    .frame(width: 24, height: 24)
+                                    .foregroundStyle(option.imageColor)
+                                
+                                Text(option.title)
+                                    .font(.subheadline)
+                            }
+                        })
+                        .foregroundStyle(.foreground)
                     }
                 }
                 
@@ -62,7 +73,14 @@ struct ProfileView: View {
                 .foregroundStyle(.red)
             }
         }
+        .preferredColorScheme(userTheme.colorScheme)
+        .sheet(isPresented: $changeTheme, content: {
+            ThemeChangeView(scheme: scheme)
+                .presentationDetents([.height(410)])
+                .presentationBackground(.clear)
+        })
     }
+    
 }
 
 #Preview {
