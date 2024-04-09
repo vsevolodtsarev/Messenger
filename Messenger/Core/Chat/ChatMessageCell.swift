@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ChatMessageCell: View {
     let isFromCurrentUser: Bool
+    @AppStorage("userTheme") private var userTheme: Theme = .systemDefault
     
     var body: some View {
         HStack {
@@ -30,7 +31,7 @@ struct ChatMessageCell: View {
                     Text(verbatim: "This is a text message from another user")
                         .font(.subheadline)
                         .padding(12)
-                        .background(Color(.systemGray5))
+                        .background(userTheme.colorScheme == .light ? Color(.systemGray5) : .white)
                         .foregroundStyle(.black)
                         .clipShape(ChatBubble(isFromCurrentUser: isFromCurrentUser))
                         .frame(maxWidth: UIScreen.main.bounds.width / 1.75, alignment: .leading)
