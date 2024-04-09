@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct InboxView: View {
-    @State private var showNewMessage = false
-    @StateObject var viewModel = InboxViewModel()
     @AppStorage("userTheme") private var userTheme: Theme = .systemDefault
+    @StateObject var viewModel = InboxViewModel()
+    @State private var showNewMessage = false
+    @State private var selectedUser: User?
+    @State private var showChat = false
+
     private var user: User? {
         viewModel.currentUser
     }
@@ -28,8 +31,16 @@ struct InboxView: View {
                 .listStyle(PlainListStyle())
                 .frame(height: UIScreen.main.bounds.height - 120)
             }
+            .onChange(of: selectedUser, perform: { value in
+                showChat = value != nil
+            })
+            .navigationDestination(isPresented: $showChat, destination: {
+                if let user = selectedUser {
+                    ChatView(user: user)
+                }
+            })
             .fullScreenCover(isPresented: $showNewMessage, content: {
-                NewMessageView()
+                NewMessageView(selectedUser: $selectedUser)
             })
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
@@ -54,7 +65,7 @@ struct InboxView: View {
                         Image(systemName: "square.and.pencil.circle.fill")
                             .resizable()
                             .frame(width: 32, height: 32)
-                            .foregroundStyle(userTheme.colorScheme == .light ? Color(.black) : Color(.white))
+                            .foregroundStyle(userTheme.colorScheme == .light ? Color(.systemGray) : Color(.white))
                     })
                 }
             }
