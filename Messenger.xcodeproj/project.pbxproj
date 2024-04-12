@@ -35,6 +35,7 @@
 		136E22AE2BC413E600D6CFD3 /* NewMessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136E22AD2BC413E600D6CFD3 /* NewMessageViewModel.swift */; };
 		136E22B02BC9773F00D6CFD3 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136E22AF2BC9773F00D6CFD3 /* Message.swift */; };
 		136E22B22BC978A100D6CFD3 /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136E22B12BC978A100D6CFD3 /* MessageService.swift */; };
+		136E22B62BC97DD100D6CFD3 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136E22B52BC97DD100D6CFD3 /* ChatViewModel.swift */; };
 		13A500842BA0820300E79F4A /* MessengerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A500832BA0820300E79F4A /* MessengerApp.swift */; };
 		13A500862BA0820300E79F4A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A500852BA0820300E79F4A /* ContentView.swift */; };
 		13A500882BA0820500E79F4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13A500872BA0820500E79F4A /* Assets.xcassets */; };
@@ -68,6 +69,7 @@
 		136E22AD2BC413E600D6CFD3 /* NewMessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageViewModel.swift; sourceTree = "<group>"; };
 		136E22AF2BC9773F00D6CFD3 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		136E22B12BC978A100D6CFD3 /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
+		136E22B52BC97DD100D6CFD3 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
 		13A500802BA0820300E79F4A /* Messenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Messenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13A500832BA0820300E79F4A /* MessengerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerApp.swift; sourceTree = "<group>"; };
 		13A500852BA0820300E79F4A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 		136E22B42BC97D7100D6CFD3 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				136E22B52BC97DD100D6CFD3 /* ChatViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 				136E229A2BBBDC8900D6CFD3 /* RegistrationViewModel.swift in Sources */,
 				136E22762BB1FA1E00D6CFD3 /* ProfileView.swift in Sources */,
 				136E22732BB07E0000D6CFD3 /* NewMessageView.swift in Sources */,
+				136E22B62BC97DD100D6CFD3 /* ChatViewModel.swift in Sources */,
 				136E22A02BBBEB7500D6CFD3 /* ContentViewModel.swift in Sources */,
 				136E22B02BC9773F00D6CFD3 /* Message.swift in Sources */,
 				13A5009B2BA0841800E79F4A /* LoginView.swift in Sources */,
