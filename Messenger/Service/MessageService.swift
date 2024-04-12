@@ -9,9 +9,9 @@ import Foundation
 import Firebase
 
 struct MessageService {
-    let messageCollection = Firestore.firestore().collection("messages")
+    static let messageCollection = Firestore.firestore().collection("messages")
     
-    func sendMessage(_ textMessage: String, toUser user: User) {
+    static func sendMessage(_ textMessage: String, toUser user: User) {
         guard let currentUId = Auth.auth().currentUser?.uid else { return }
         let chatPartnerId = user.id
         
