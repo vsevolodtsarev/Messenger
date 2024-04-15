@@ -8,15 +8,19 @@
 import SwiftUI
 
 struct ChatMessageCell: View {
-    let isFromCurrentUser: Bool
+    let message: Message
     @AppStorage("userTheme") private var userTheme: Theme = .systemDefault
+    
+    private var isFromCurrentUser: Bool {
+        message.isFromCurrentUser
+    }
     
     var body: some View {
         HStack {
-            if isFromCurrentUser {
+            if message.isFromCurrentUser {
                 Spacer()
                 
-                Text(verbatim: "This is a text message from current user")
+                Text(verbatim: message.messageText)
                     .font(.subheadline)
                     .padding(12)
                     .background(Color(.systemBlue))
@@ -28,7 +32,7 @@ struct ChatMessageCell: View {
                 HStack(alignment: .bottom, spacing: 8) {
                     ImageProfileView(user: User.mockUser, size: .small)
                     
-                    Text(verbatim: "This is a text message from another user")
+                    Text(verbatim: message.messageText)
                         .font(.subheadline)
                         .padding(12)
                         .background(userTheme.colorScheme == .light ? Color(.systemGray5) : .white)
@@ -42,8 +46,4 @@ struct ChatMessageCell: View {
         }
         .padding(.horizontal, 8)
     }
-}
-
-#Preview {
-    ChatMessageCell(isFromCurrentUser: false)
 }
