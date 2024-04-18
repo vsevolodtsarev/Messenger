@@ -9,17 +9,18 @@ import Foundation
 import Firebase
 
 struct MessageService {
-    static let messageCollection = Firestore.firestore().collection("messages")
+    let messageCollection = Firestore.firestore().collection("messages")
+    let chatPartner: User
     
-    static func sendMessage(_ textMessage: String, toUser user: User) {
+    func sendMessage(_ textMessage: String) {
         guard let currentUId = Auth.auth().currentUser?.uid else { return }
-        let chatPartnerId = user.id
+        let chatPartnerId = chatPartner.id
         
         let currentUserRef = messageCollection.document(currentUId).collection(chatPartnerId).document()
         let chatPartnerRef = messageCollection.document(chatPartnerId).collection(currentUId)
         
         let messageId = currentUserRef.documentID
-        let message = Message(messageId: messageId, 
+        let message = Message(messageId: messageId,
                               fromId: currentUId,
                               toId: chatPartnerId,
                               messageText: textMessage,
@@ -31,7 +32,7 @@ struct MessageService {
         chatPartnerRef.document(messageId).setData(messageData)
     }
     
-    static func observeMessages(chatPartner: User, completion: @escaping([Message]) -> Void) {
+    func observeMessages(completion: @escaping([Message]) -> Void) {
         guard let currentId = Auth.auth().currentUser?.uid else { return }
         let chatPartnerId = chatPartner.id
         
