@@ -19,6 +19,9 @@ struct MessageService {
         let currentUserRef = messageCollection.document(currentUId).collection(chatPartnerId).document()
         let chatPartnerRef = messageCollection.document(chatPartnerId).collection(currentUId)
         
+        let recentCurrentUserRef = messageCollection.document(currentUId).collection("recent-messages").document(chatPartnerId)
+        let recentPartnerRef = messageCollection.document(chatPartnerId).collection("recent-messages").document(currentUId)
+        
         let messageId = currentUserRef.documentID
         let message = Message(messageId: messageId,
                               fromId: currentUId,
@@ -30,6 +33,9 @@ struct MessageService {
         
         currentUserRef.setData(messageData)
         chatPartnerRef.document(messageId).setData(messageData)
+        
+        recentCurrentUserRef.setData(messageData)
+        recentPartnerRef.setData(messageData)
     }
     
     func observeMessages(completion: @escaping([Message]) -> Void) {
