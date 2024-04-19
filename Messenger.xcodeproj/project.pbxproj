@@ -42,6 +42,7 @@
 		13A5008B2BA0820500E79F4A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13A5008A2BA0820500E79F4A /* Preview Assets.xcassets */; };
 		13A5009B2BA0841800E79F4A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A5009A2BA0841800E79F4A /* LoginView.swift */; };
 		13A5009D2BA0876000E79F4A /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 13A5009C2BA0876000E79F4A /* Localizable.xcstrings */; };
+		13E102CC2BD2AF39004E976A /* InboxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E102CB2BD2AF39004E976A /* InboxService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +78,7 @@
 		13A5008A2BA0820500E79F4A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		13A5009A2BA0841800E79F4A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		13A5009C2BA0876000E79F4A /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		13E102CB2BD2AF39004E976A /* InboxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -298,6 +300,7 @@
 				136E22A12BBDC6D000D6CFD3 /* UserService.swift */,
 				136E229B2BBBDCBF00D6CFD3 /* AuthService.swift */,
 				136E22B12BC978A100D6CFD3 /* MessageService.swift */,
+				13E102CB2BD2AF39004E976A /* InboxService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -448,6 +451,7 @@
 				136E22B62BC97DD100D6CFD3 /* ChatViewModel.swift in Sources */,
 				136E22A02BBBEB7500D6CFD3 /* ContentViewModel.swift in Sources */,
 				136E22B02BC9773F00D6CFD3 /* Message.swift in Sources */,
+				13E102CC2BD2AF39004E976A /* InboxService.swift in Sources */,
 				13A5009B2BA0841800E79F4A /* LoginView.swift in Sources */,
 				136E22852BB9C1FC00D6CFD3 /* ChatView.swift in Sources */,
 				136E229C2BBBDCBF00D6CFD3 /* AuthService.swift in Sources */,
