@@ -27,4 +27,15 @@ final class UserService {
         let users = snapshot.documents.compactMap({ try? $0.data(as: User.self) })
         return users.filter({ $0.uid != currentUid })
     }
+    
+    static func fetchUser(withUid uid: String, completion: @escaping(User) -> Void ) {
+        Firestore.firestore().collection("users").document(uid).getDocument { snapshot, _ in
+            do {
+                guard let user = try snapshot?.data(as: User.self) else { return }
+                completion(user)
+            } catch {
+                print("error \(error)")
+            }
+        }
+    }
 }
