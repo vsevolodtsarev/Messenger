@@ -45,7 +45,7 @@ struct ChatView: View {
             ZStack(alignment: .trailing) {
                 TextField("Message", text: $viewModel.messageText, axis: .vertical)
                     .padding(12)
-                    .padding(.trailing, 48)
+                    .padding(.trailing, 100)
                     .background(Color(.systemGroupedBackground))
                     .clipShape(Capsule())
                     .font(.subheadline)
