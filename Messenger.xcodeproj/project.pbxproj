@@ -43,6 +43,7 @@
 		13A5009B2BA0841800E79F4A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A5009A2BA0841800E79F4A /* LoginView.swift */; };
 		13A5009D2BA0876000E79F4A /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 13A5009C2BA0876000E79F4A /* Localizable.xcstrings */; };
 		13E102CC2BD2AF39004E976A /* InboxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E102CB2BD2AF39004E976A /* InboxService.swift */; };
+		13E102CE2BD53A31004E976A /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E102CD2BD53A31004E976A /* Date.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +80,7 @@
 		13A5009A2BA0841800E79F4A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		13A5009C2BA0876000E79F4A /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		13E102CB2BD2AF39004E976A /* InboxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxService.swift; sourceTree = "<group>"; };
+		13E102CD2BD53A31004E976A /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -308,6 +310,7 @@
 		13A500942BA082A100E79F4A /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				13E102CD2BD53A31004E976A /* Date.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -446,6 +449,7 @@
 				136E22AA2BC3E5A500D6CFD3 /* ThemeChangeView.swift in Sources */,
 				136E22A62BC13F8B00D6CFD3 /* InboxViewModel.swift in Sources */,
 				136E229A2BBBDC8900D6CFD3 /* RegistrationViewModel.swift in Sources */,
+				13E102CE2BD53A31004E976A /* Date.swift in Sources */,
 				136E22762BB1FA1E00D6CFD3 /* ProfileView.swift in Sources */,
 				136E22732BB07E0000D6CFD3 /* NewMessageView.swift in Sources */,
 				136E22B62BC97DD100D6CFD3 /* ChatViewModel.swift in Sources */,

@@ -27,13 +27,13 @@ struct InboxRowView: View {
             }
             
             HStack {
-                Text(verbatim: "Yesterday")
+                Text(verbatim: message.timestampString)
                 
                 Image(systemName: "chevron.right")
             }
             .font(.footnote)
             .foregroundStyle(.gray)
         }
-        .frame(height: 72)
+        .frame(height: 52)
     }
 }

@@ -310,6 +310,17 @@
           }
         }
       }
+    },
+    "Yesterday" : {
+      "comment" : "Yesterday",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вчера"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"
