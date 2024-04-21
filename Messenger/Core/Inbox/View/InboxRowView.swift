@@ -34,6 +34,6 @@ struct InboxRowView: View {
             .font(.footnote)
             .foregroundStyle(.gray)
         }
-        .frame(height: 72)
+        .frame(height: 52)
     }
 }
