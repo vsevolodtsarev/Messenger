@@ -13,26 +13,38 @@ struct InboxView: View {
     @State private var showNewMessage = false
     @State private var selectedUser: User?
     @State private var showChat = false
-
+    
     private var user: User? {
         viewModel.currentUser
     }
     
     var body: some View {
         NavigationStack {
-            ScrollView {
+            List {
                 ActiveNowView()
+                    .listRowSeparator(.hidden)
+                    .listRowInsets(EdgeInsets())
+                    .padding(.vertical)
+                    .padding(.horizontal, 4)
                 
-                List {
-                    ForEach(viewModel.recentMessages) { message in
+                ForEach(viewModel.recentMessages) { message in
+                    ZStack {
+                        NavigationLink(value: message) {
+                            EmptyView()
+                        }.opacity(0)
+                        
                         InboxRowView(message: message)
                     }
                 }
-                .listStyle(PlainListStyle())
-                .frame(height: UIScreen.main.bounds.height - 120)
             }
+            .listStyle(PlainListStyle())
             .onChange(of: selectedUser, perform: { value in
                 showChat = value != nil
+            })
+            .navigationDestination(for: Message.self, destination: { message in
+                if let user = message.user {
+                    ChatView(user: user)
+                }
             })
             .navigationDestination(isPresented: $showChat, destination: {
                 if let user = selectedUser {
