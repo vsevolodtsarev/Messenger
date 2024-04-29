@@ -14,24 +14,26 @@ struct ActiveNowView: View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 32) {
                 ForEach(viewModel.users) { user in
-                    VStack {
-                        ZStack(alignment: .bottomTrailing) {
-                            ImageProfileView(user: user, size: .medium)
-                            
-                            ZStack {
-                                Circle()
-                                    .fill(.white)
-                                    .frame(width: 18, height: 18)
+                    NavigationLink(value: Route.chatView(user)) {
+                        VStack {
+                            ZStack(alignment: .bottomTrailing) {
+                                ImageProfileView(user: user, size: .medium)
                                 
-                                Circle()
-                                    .fill(.green)
-                                    .frame(width: 12, height: 12)
+                                ZStack {
+                                    Circle()
+                                        .fill(.white)
+                                        .frame(width: 18, height: 18)
+                                    
+                                    Circle()
+                                        .fill(.green)
+                                        .frame(width: 12, height: 12)
+                                }
                             }
+                            
+                            Text(verbatim: user.firstName)
+                                .font(.footnote)
+                                .foregroundStyle(.gray)
                         }
-                        
-                        Text(verbatim: user.firstName)
-                            .font(.footnote)
-                            .foregroundStyle(.gray)
                     }
                 }
             }
