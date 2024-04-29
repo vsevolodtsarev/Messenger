@@ -7,6 +7,7 @@
 
 import Foundation
 
+@MainActor
 final class ActiveNowViewModel: ObservableObject {
     @Published var users = [User]()
     
