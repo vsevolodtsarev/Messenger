@@ -29,8 +29,8 @@ struct ActiveNowView: View {
                             }
                         }
                         
-                        Text(verbatim: user.fullname)
-                            .font(.subheadline)
+                        Text(verbatim: user.firstName)
+                            .font(.footnote)
                             .foregroundStyle(.gray)
                     }
                 }
