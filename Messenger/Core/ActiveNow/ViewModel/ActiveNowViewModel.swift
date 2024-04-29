@@ -7,7 +7,6 @@
 
 import Foundation
 
-@MainActor
 final class ActiveNowViewModel: ObservableObject {
     @Published var users = [User]()
     
@@ -15,6 +14,7 @@ final class ActiveNowViewModel: ObservableObject {
         Task { try await fetchUsers() }
     }
     
+    @MainActor
     func fetchUsers() async throws {
         users = try await UserService.fetchAllUsers()
     }
