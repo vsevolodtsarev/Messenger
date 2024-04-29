@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		132D00B72BA976D700210135 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132D00B62BA976D700210135 /* RegistrationView.swift */; };
+		133FA29F2BDFB1F000DA29BD /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133FA29E2BDFB1F000DA29BD /* Route.swift */; };
 		136E226C2BAEEA3C00D6CFD3 /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136E226B2BAEEA3C00D6CFD3 /* InboxView.swift */; };
 		136E226E2BAEECC200D6CFD3 /* ActiveNowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136E226D2BAEECC200D6CFD3 /* ActiveNowView.swift */; };
 		136E22702BAEF01100D6CFD3 /* InboxRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136E226F2BAEF01100D6CFD3 /* InboxRowView.swift */; };
@@ -49,6 +50,7 @@
 
 /* Begin PBXFileReference section */
 		132D00B62BA976D700210135 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		133FA29E2BDFB1F000DA29BD /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		136E226B2BAEEA3C00D6CFD3 /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
 		136E226D2BAEECC200D6CFD3 /* ActiveNowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveNowView.swift; sourceTree = "<group>"; };
 		136E226F2BAEF01100D6CFD3 /* InboxRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxRowView.swift; sourceTree = "<group>"; };
@@ -100,6 +102,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		133FA29D2BDFB1E600DA29BD /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				133FA29E2BDFB1F000DA29BD /* Route.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
 		136E226A2BAEEA2200D6CFD3 /* Inbox */ = {
 			isa = PBXGroup;
 			children = (
@@ -257,6 +267,7 @@
 		13A500822BA0820300E79F4A /* Messenger */ = {
 			isa = PBXGroup;
 			children = (
+				133FA29D2BDFB1E600DA29BD /* Routing */,
 				13A500962BA082D000E79F4A /* Resources */,
 				13A500952BA082B100E79F4A /* Model */,
 				13A500942BA082A100E79F4A /* Extension */,
@@ -473,6 +484,7 @@
 			files = (
 				136E22702BAEF01100D6CFD3 /* InboxRowView.swift in Sources */,
 				136E22B22BC978A100D6CFD3 /* MessageService.swift in Sources */,
+				133FA29F2BDFB1F000DA29BD /* Route.swift in Sources */,
 				136E22AA2BC3E5A500D6CFD3 /* ThemeChangeView.swift in Sources */,
 				136E22A62BC13F8B00D6CFD3 /* InboxViewModel.swift in Sources */,
 				136E229A2BBBDC8900D6CFD3 /* RegistrationViewModel.swift in Sources */,
