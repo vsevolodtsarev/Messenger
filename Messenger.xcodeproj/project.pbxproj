@@ -44,6 +44,7 @@
 		13A5009D2BA0876000E79F4A /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 13A5009C2BA0876000E79F4A /* Localizable.xcstrings */; };
 		13E102CC2BD2AF39004E976A /* InboxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E102CB2BD2AF39004E976A /* InboxService.swift */; };
 		13E102CE2BD53A31004E976A /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E102CD2BD53A31004E976A /* Date.swift */; };
+		13E102D32BDFAB2D004E976A /* ActiveNowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E102D22BDFAB2D004E976A /* ActiveNowViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +82,7 @@
 		13A5009C2BA0876000E79F4A /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		13E102CB2BD2AF39004E976A /* InboxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxService.swift; sourceTree = "<group>"; };
 		13E102CD2BD53A31004E976A /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		13E102D22BDFAB2D004E976A /* ActiveNowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveNowViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -382,6 +384,7 @@
 		13E102D12BDFAAE0004E976A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				13E102D22BDFAB2D004E976A /* ActiveNowViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -483,6 +486,7 @@
 				13A5009B2BA0841800E79F4A /* LoginView.swift in Sources */,
 				136E22852BB9C1FC00D6CFD3 /* ChatView.swift in Sources */,
 				136E229C2BBBDCBF00D6CFD3 /* AuthService.swift in Sources */,
+				13E102D32BDFAB2D004E976A /* ActiveNowViewModel.swift in Sources */,
 				13A500862BA0820300E79F4A /* ContentView.swift in Sources */,
 				136E22872BB9C52A00D6CFD3 /* ChatMessageCell.swift in Sources */,
 				136E22892BB9C89300D6CFD3 /* ChatBubble.swift in Sources */,
