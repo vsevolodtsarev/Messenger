@@ -188,7 +188,6 @@
 			isa = PBXGroup;
 			children = (
 				136E226B2BAEEA3C00D6CFD3 /* InboxView.swift */,
-				136E226D2BAEECC200D6CFD3 /* ActiveNowView.swift */,
 				136E226F2BAEF01100D6CFD3 /* InboxRowView.swift */,
 			);
 			path = View;
@@ -285,6 +284,7 @@
 		13A500922BA0828A00E79F4A /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				13E102CF2BDFAACD004E976A /* ActiveNow */,
 				136E22832BB9C1D600D6CFD3 /* Chat */,
 				136E22802BB70C2600D6CFD3 /* Components */,
 				136E22742BB1FA0200D6CFD3 /* Profile */,
@@ -360,6 +360,30 @@
 				132D00B62BA976D700210135 /* RegistrationView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		13E102CF2BDFAACD004E976A /* ActiveNow */ = {
+			isa = PBXGroup;
+			children = (
+				13E102D12BDFAAE0004E976A /* ViewModel */,
+				13E102D02BDFAADD004E976A /* View */,
+			);
+			path = ActiveNow;
+			sourceTree = "<group>";
+		};
+		13E102D02BDFAADD004E976A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				136E226D2BAEECC200D6CFD3 /* ActiveNowView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		13E102D12BDFAAE0004E976A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
